@@ -1,0 +1,46 @@
+<?xmlversion="1.0" encoding="UTF-8"?>
+<action-mapping>
+
+    <action
+        name="list"
+        label="List Authors | pt_BR: Listar Autores"
+        default="true"
+        description="">
+        <menu​​ action="create"​​/>
+        <menu​​ function="search" label="Search | pt_BR:Buscar" image=​"search.png"​​​/>
+    </action>
+
+    <action
+        name="view"
+        label="View Author | pt_BR: Vizualizar Autor"
+        description="">
+        <menu ​​ action="list"/>
+        <menu action="edit"/>
+        <menu​​ function="print" label="Print | pt_BR: Imprimir" image="print.png"​​​/>
+    </action>
+
+    <action
+        name="create"
+        label="Create New Author | pt_BR: Criar Novo Autor"
+        description="">
+        <menu ​​ function="save" label="Save | pt_BR:Salvar"​​ image="save.png"​/>
+        <menu​​  action="list" ​​ image="close.png"​​/>
+    </action>
+
+    <action
+        name="edit"
+        label="Edit Author | pt_BR: Editar Autor"
+        description="">
+        <menu​​ function="save" label="Save | pt_BR:Salvar" image=​"save.png"​​​/>
+        <menu​​ action="list"​​ image="close.png"/>
+    </action>
+
+    <action
+        name="delete"
+        label="Delete Author | pt_BR: Apagar Autor"
+        description="">
+        <menu​​ function="delete" label="Delete | pt_BR:Apagar" image=​"delete.png"​​​/>
+        <menu​​ action="list"​​ image="close.png"/>
+    </action>
+
+</action-mapping>

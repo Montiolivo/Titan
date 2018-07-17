@@ -1,0 +1,10 @@
+<?xmlversion="1.0" encoding="UTF-8"?>
+<form​​ table=​"library.author"​​ primary=​"_id">
+    <go-to​​ flag=​"success" ​​  action=​"[default]"​​/>
+    <go-to ​​ flag=​"fail" action=​"[same]"​​/>
+    <group​​ label=​"Dados do Autor">
+        <field​​ type=​"Phrase" ​ column=​"_name"​​ label=​"Name | pt_BR:Nome" max-length=​"128"​​/>
+        <field​​ type=​"Date"​​ column=​"_birthdate" ​​ label=​"Birthdate | pt_BR: Data de Nascimento"
+    first-year=​"1900" ​​ last-year=​"[now]"​​/>
+    </group>
+</form>

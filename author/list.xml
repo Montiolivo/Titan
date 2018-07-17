@@ -1,0 +1,16 @@
+<?xmlversion="1.0" encoding="UTF-8"?>
+<view​​ table="library.author" ​​ primary="_id"​ paginate="15">
+    <field ​​ type="Phrase" ​​ column="_name"​​ label="Nome"​​/>
+    <field ​​ type="Date" column="_birthdate"​​ label="Data de Nascimento"​​/>
+    <icon id="_VIEW_" action="view" section="author" image="view.gif" label=​"ViewAuthor|pt_BR:VisualizarAutor" image="view.gif"  default="true"/>
+    <icon ​​ action="edit"​​ image="edit.gif"​​ label=​"Editar Autor"​​/>
+    <icon​​  action="delete" image=​"delete.gif" label=​"Apagar Autor"​​/>
+ 
+
+</view>
+<search ​​ table=​"library.author">
+    <field​​ type=​"Phrase"​​ column=​"_name"​​ label=​"Nome"​​/>
+    <field​​ type=​"Date" ​​ column=​"_birthdate"​​ label=​"Data de Nascimento"​​/>
+</search>
+
+
