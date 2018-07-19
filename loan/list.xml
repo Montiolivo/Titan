@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search table="library._loan">
+    <field type="Date" column="_date" label="Date | pt_BR: Data"/>
+    <field type="Select" column="_student" label="Student | pt_BR: Estudante" link-table="titan._user" link-column="_id" link-view="_name" id="_ACTOR_"/>
+    <field type="Select" column="_book" label="Book | pt_BR: Livro" link-table="library._book" link-column="_id" link-view="_name"/>
+</search>
+<view table="library._loan" primary="_id" paginate="15">
+    <field type="Date" column="_date" label="Date | pt_BR: Data" />
+    <field type="Select" column="_student" label="Student | pt_BR: Estudante" link-table="titan._user" link-column="_id" link-view="_name" id="_ACTOR_"/>
+    <field type="Select" column="_book" label="Book | pt_BR: Livro" link-table="library._book" link-column="_id" link-view="_name"/>
+	<icon action="view" image="view.gif" label="Visualizar" default="true" />
+	<icon action="edit" image="edit.gif" label="Editar" />
+	<icon action="delete" image="delete.gif" label="Apagar" />
+</view>

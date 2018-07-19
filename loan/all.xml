@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form​​ table=​"library._loan"​​ primary=​"_id">
+        <go-to​​ flag=​"success" ​​  action=​"[default]"​​/>
+        <go-to ​​ flag=​"fail" action=​"[same]"​​/>
+        <group​​ label=​"Dados do Empréstimo">
+            <field​​ type=​"Date"​​ column=​"_date" ​​ label=​"Date | pt_BR: Data"
+        first-year=​"2014" ​​ last-year=​"[now]"​​/>
+           <field type="Select" column="_book" label="Book | pt_BR: Livro" link-table="library._book" link-column="_id" link-view="_name"/>
+           <field type="Select" column="_student" label="Student | pt_BR: Estudante" link-table="titan._user" link-column="_id" link-view="_name" id="_ACTOR_"/>
+        </group>
+</form>
